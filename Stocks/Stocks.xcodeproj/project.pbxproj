@@ -13,6 +13,10 @@
 		AB244D6A23DFC4AC00658722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB244D6923DFC4AC00658722 /* Assets.xcassets */; };
 		AB244D6D23DFC4AC00658722 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB244D6C23DFC4AC00658722 /* Preview Assets.xcassets */; };
 		AB244D7023DFC4AC00658722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB244D6E23DFC4AC00658722 /* LaunchScreen.storyboard */; };
+		AB244D7923DFC60C00658722 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB244D7823DFC60C00658722 /* Stock.swift */; };
+		AB244D7C23DFC66B00658722 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB244D7B23DFC66B00658722 /* Webservice.swift */; };
+		AB244D7E23DFC92E00658722 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB244D7D23DFC92E00658722 /* StockViewModel.swift */; };
+		AB244D8023DFC9B500658722 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB244D7F23DFC9B500658722 /* StockListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AB244D6C23DFC4AC00658722 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB244D6F23DFC4AC00658722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB244D7123DFC4AC00658722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB244D7823DFC60C00658722 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		AB244D7B23DFC66B00658722 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		AB244D7D23DFC92E00658722 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		AB244D7F23DFC9B500658722 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		AB244D6223DFC4A900658722 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				AB244D8123DFCACE00658722 /* Views */,
+				AB244D7A23DFC65800658722 /* Controller */,
+				AB244D7723DFC5FD00658722 /* Model */,
 				AB244D6323DFC4A900658722 /* AppDelegate.swift */,
 				AB244D6523DFC4A900658722 /* SceneDelegate.swift */,
 				AB244D6723DFC4A900658722 /* ContentView.swift */,
@@ -73,6 +84,31 @@
 				AB244D6C23DFC4AC00658722 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB244D7723DFC5FD00658722 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB244D7823DFC60C00658722 /* Stock.swift */,
+				AB244D7D23DFC92E00658722 /* StockViewModel.swift */,
+				AB244D7F23DFC9B500658722 /* StockListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB244D7A23DFC65800658722 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB244D7B23DFC66B00658722 /* Webservice.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB244D8123DFCACE00658722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB244D6423DFC4A900658722 /* AppDelegate.swift in Sources */,
+				AB244D8023DFC9B500658722 /* StockListViewModel.swift in Sources */,
 				AB244D6623DFC4A900658722 /* SceneDelegate.swift in Sources */,
+				AB244D7923DFC60C00658722 /* Stock.swift in Sources */,
+				AB244D7E23DFC92E00658722 /* StockViewModel.swift in Sources */,
+				AB244D7C23DFC66B00658722 /* Webservice.swift in Sources */,
 				AB244D6823DFC4A900658722 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
