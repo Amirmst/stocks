@@ -9,8 +9,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var stockListVM = StockListViewModel()
+    var date = Date()
+    
+    static var titleDateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter
+    }
+    
+    init() {
+        self.stockListVM.load()
+    }
+    
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack(alignment: .leading) {
+                VStack {
+                    HStack {
+                        Text("\(date, formatter: Self.titleDateFormatter)")
+                            .bold()
+                            .font(.title)
+                            .foregroundColor(.secondary)
+                            .padding(.leading, 20)
+                            .padding(.top, 2)
+                        Spacer()
+                    }
+                }
+                Spacer()
+            }.navigationBarTitle("Stocks")
+        }.edgesIgnoringSafeArea(.bottom)
     }
 }
 
